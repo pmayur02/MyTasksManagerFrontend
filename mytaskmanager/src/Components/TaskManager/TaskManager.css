@@ -1,0 +1,198 @@
+/* Container */
+.dashboard-container {
+  max-width: 800px;
+  margin: 50px auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Header */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.dashboard-header h2 {
+  color: #333;
+  font-size: 24px;
+}
+
+/* Logout Button */
+.logout-btn {
+  background: #e53e3e;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+
+.logout-btn:hover {
+  background: #c53030;
+}
+
+/* ========================= */
+/* Task Form */
+/* ========================= */
+
+.task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.task-form input,
+.task-form textarea,
+.task-form select {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+.task-form input:focus,
+.task-form textarea:focus,
+.task-form select:focus {
+  border-color: #667eea;
+  outline: none;
+  box-shadow: 0 0 5px rgba(102, 126, 234, 0.4);
+}
+
+.task-form textarea {
+  resize: none;
+  height: 80px;
+}
+
+/* Add Button */
+.add-btn {
+  background: #38a169;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.add-btn:hover {
+  background: #2f855a;
+}
+
+/* Update Button */
+.update-btn {
+  background: #3182ce;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.update-btn:hover {
+  background: #2b6cb0;
+}
+
+/* ========================= */
+/* Task List */
+/* ========================= */
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-item {
+  background: #f7fafc;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  transition: 0.3s ease;
+}
+
+.task-item:hover {
+  background: #edf2f7;
+}
+
+/* Task Text */
+.task-item h4 {
+  margin-bottom: 5px;
+  color: #2d3748;
+}
+
+.task-item p {
+  font-size: 14px;
+  color: #4a5568;
+  margin-bottom: 5px;
+}
+
+.task-item small {
+  font-size: 12px;
+  color: #718096;
+}
+
+/* ========================= */
+/* Task Buttons */
+/* ========================= */
+
+.task-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.edit-btn {
+  background: #3182ce;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-size: 13px;
+  transition: 0.3s ease;
+}
+
+.edit-btn:hover {
+  background: #2b6cb0;
+}
+
+.delete-btn {
+  background: #e53e3e;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-size: 13px;
+  transition: 0.3s ease;
+}
+
+.delete-btn:hover {
+  background: #c53030;
+}
+
+/* ========================= */
+/* Responsive */
+/* ========================= */
+
+@media (max-width: 600px) {
+  .dashboard-container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .task-item {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .task-actions {
+    align-self: flex-end;
+  }
+}
