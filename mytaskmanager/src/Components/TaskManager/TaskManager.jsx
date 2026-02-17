@@ -67,7 +67,6 @@ function TaskManager() {
   const handleUpdate = async () => {
     try {
       const payload = {};
-        debugger
       if (form.title) payload.title = form.title;
       if (form.description) payload.description = form.description;
       if (form.status) payload.status = form.status;

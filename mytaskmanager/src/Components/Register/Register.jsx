@@ -16,7 +16,6 @@ function Register() {
     e.preventDefault();
 
     try {
-    debugger
       const res = await API.post("/users/register-user", form);
       alert("Registered successfully!");
      localStorage.setItem("token", res.data.access_token);
