@@ -1,8 +1,6 @@
 
 ---
 
-# **2️⃣ Frontend README (`frontend/README.md`)**
-
 # React Todo App Frontend
 
 This is the frontend for the Todo App, built with **React**.  
